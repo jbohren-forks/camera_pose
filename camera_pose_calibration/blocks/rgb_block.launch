@@ -10,7 +10,7 @@
     <node type="throttle" pkg="topic_tools" name="image_throttle" args="messages image_rect 20 image_throttle" />
 
     <!-- Checkerboard detector -->
-    <node pkg="image_cb_detector" type="image_cb_detector_action_old" name="stereo_cb_detector" output="screen">
+    <node pkg="image_cb_detector" type="image_cb_detector_action" name="stereo_cb_detector" output="screen">
       <remap from="image" to="image_throttle" />
       <remap from="camera_info" to="camera_info" />
     </node>
