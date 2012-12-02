@@ -184,7 +184,7 @@ class Aggregator:
                 if self.capture_time+rospy.Duration(4.0) > rospy.Time.now():
                     if self.capture_time+rospy.Duration(2.0) > rospy.Time.now():
                         self.pub.publish(self.bridge.cv_to_imgmsg(self.image_captured, encoding="passthrough"))
-                    elif self.calibrate_time+rospy.Duration(5.0) > rospy.Time.now():
+                    elif self.calibrate_time+rospy.Duration(20.0) > rospy.Time.now():
                         self.pub.publish(self.bridge.cv_to_imgmsg(self.image_optimized, encoding="passthrough"))
                         if beep_time+rospy.Duration(4.0) < rospy.Time.now():
                             beep_time = rospy.Time.now()
