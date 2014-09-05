@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+import roslib
 import rospy
 import camera_pose_calibration.msg
 import std_msgs.msg
@@ -6,6 +7,7 @@ import rosbag
 import sys
 import os
 import rostopic
+from rostopic import ROSTopicException
 
 def callback(msg):
     global topic_name, bag_filename
