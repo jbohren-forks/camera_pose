@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import roslib; roslib.load_manifest('camera_pose_calibration')
 import cv
 from cv_bridge import CvBridge, CvBridgeError
 import rospy
