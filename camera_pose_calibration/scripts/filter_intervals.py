@@ -2,7 +2,6 @@
 
 
 
-import roslib; roslib.load_manifest('camera_pose_calibration')
 import rospy
 import threading
 from calibration_msgs.msg import Interval, CalibrationPattern

@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 import copy
-import roslib; roslib.load_manifest('camera_pose_calibration')
 import rospy
 import threading
 from sensor_msgs.msg import CameraInfo
